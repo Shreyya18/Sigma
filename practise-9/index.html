@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        div{
+            background-color: red;
+        }
+        .third-div {
+            background-color: blue;
+        }
+        #fourth-div {
+            background-color: green;
+        }
+        div>p{
+            background-color: yellow;
+        }
+
+        div article p{
+            background-color: orange;
+        }
+        *{
+            color: black;
+        }
+
+        a:visited{
+            color:aqua
+        }
+        a:active{
+            color: red;
+            background-color: black;
+        }
+        a:hover{
+            color: hotpink;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>I am a div</div>
+    <br>
+    <div>
+        I am another div
+    </div>
+    <br>
+    <div class="third-div">
+        I am a third div.. (class selector)
+    </div>
+    <br>
+    <div id="fourth-div">
+        I am a fourth div... (id selector)
+    </div>
+
+    <div>
+        <p>
+            I am a paragraph inside a div. (child selector)
+        </p>
+    </div>
+    <div>
+        <article>
+            <p>
+                I am a paragraph inside an article inside a div. (descendant selector)
+            </p>
+        </article>
+    </div>
+
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.facebook.com">Facebook</a>
+    <a href="https://www.twitter.com">Twitter</a>
+</body>
+</html>
