@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow</title>
+    <style>
+        .box1{
+            width:20vw;
+            height: 20vh;border: 2px solid black;
+            overflow: hidden;
+            
+            
+        }
+
+        .box2{
+            border: 2px solid black;
+            width: 20vw;
+            height: 20vh;
+            overflow: scroll;
+        }
+
+        .box3{
+            border: 2px solid black;
+            width: 20vw;
+            height: 20vh;
+            overflow: auto;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum recusandae libero quaerat aspernatur voluptatibus cupiditate amet esse similique dolores nesciunt, consectetur sit consequuntur! Accusamus, fugit!
+        lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum recusandae libero quaerat aspernatur voluptatibus cupiditate amet esse similique dolores nesciunt, consectetur sit consequuntur! Accusamus, fugit!
+
+    </div>
+    <div class="box2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate inventore ipsum corrupti laboriosam quasi nisi obcaecati repellat delectus ad? Doloremque repudiandae magni possimus ratione laboriosam!</div>
+
+    <div class="box3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero dolorem fugiat quibusdam dolores provident, tempore quia aut exercitationem nam fuga, dignissimos corrupti, amet ducimus qui.</div>
+</body>
+</html>
