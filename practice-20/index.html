@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            width: 100vw;
+            overflow-x: hidden;
+
+        }
+        :root{
+            --nvacolor:lightblue;
+            --divcolor: lightpink;
+            --textcolor: rgb(222, 41, 41);
+            --textsize: 20px;
+
+        }
+        .navbar{
+            width: 100%;
+            margin: auto;
+            background-color: var(--nvacolor);
+            padding: 10px;
+            box-sizing: border-box;
+            position: sticky;
+            font-size: var(--textsize);
+
+        }
+        ul{
+            display: flex;
+            justify-content:space-around;
+        }
+        ul li{
+            list-style-type: none;
+            padding-bottom:10px;
+            padding-top: 10px;
+            text-align: center;
+        }
+        .container{
+            width:80vw ;
+            margin: 20px auto ;
+            background-color: var(--divcolor);
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            color: var(--textcolor);
+            font-size: var(--textsize);
+        }
+
+        .box{
+            background-color: var(--divcolor);
+            width: 80vw;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+
+        }
+        .footer{
+            width:100%;
+            background-color: var(--nvacolor);
+            margin: auto;
+            margin-top: 20px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis unde asperiores ipsum, nobis consequuntur, aperiam magnam eos aliquam dignissimos esse laborum exercitationem provident veritatis error facere quia minus quaerat porro odit vitae fugit voluptatibus? Quaerat, amet tenetur deleniti natus impedit temporibus, tempore sapiente, facere fugit provident molestias consequatur dolor eligendi.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore aliquid, ipsam esse rerum nisi omnis eligendi est dolor, vitae nihil pariatur, illo repellendus harum ipsum ea. Voluptates consequuntur unde temporibus itaque nisi maiores ullam. Tempore doloremque adipisci aliquid unde maxime, temporibus officia dolor, perspiciatis consequatur, repellendus dicta tenetur ducimus suscipit?
+        </p>
+    </div>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eaque ipsa enim autem blanditiis iste voluptas, reprehenderit error voluptatibus minus! Accusamus vero commodi perspiciatis nostrum repellendus sit soluta mollitia possimus!
+      Delectus corporis quidem sit nulla, ab vel iure placeat quaerat, ipsa est ratione illum maxime rerum suscipit pariatur aspernatur dolore beatae distinctio. Doloribus laborum obcaecati repellat doloremque! Maiores, esse perferendis?
+      Recusandae adipisci dolorum accusantium dicta porro consequuntur beatae sapiente. Illum possimus tempore eos itaque, repellendus enim quia eveniet sapiente pariatur sint rerum suscipit expedita autem ducimus nostrum quod. Inventore, sequi!
+      Porro iure placeat velit libero, explicabo quibusdam nemo ratione, perspiciatis blanditiis tempore iusto expedita, qui dolorem accusamus illo ab id nulla quod adipisci at excepturi modi? Iste officia aut beatae?
+      Voluptas reiciendis alias eaque repellat nihil officia ut culpa maxime quos a, accusamus optio in, deserunt ex quo, earum debitis minus inventore? Facere aliquid, cum molestiae iste quod dolorem eligendi!
+      Aliquid asperiores totam, omnis voluptas incidunt labore qui eligendi. Est, esse dolore ducimus sit hic ipsam quibusdam animi praesentium dolores? Assumenda hic delectus illum consequatur nostrum earum obcaecati adipisci mollitia!
+      Nisi inventore, dolor perspiciatis mollitia asperiores ipsam doloremque voluptatibus et itaque unde tenetur fugiat, eveniet rerum quidem id minus illum eum? Quia, eius. Vel vero nobis facilis rem nemo voluptas.
+      Vero asperiores provident incidunt. Incidunt accusamus qui dolore nihil porro voluptas expedita exercitationem sed itaque nobis vel totam fuga laudantium harum quia, soluta corrupti reiciendis nisi laboriosam. Mollitia, aspernatur eos.
+      Sequi cum obcaecati dolorem id voluptatem quia cupiditate molestiae illo modi? Ipsum qui itaque iure excepturi minus laudantium eum iste distinctio sequi quod? Rerum, at consectetur. Quas adipisci deserunt nesciunt.
+      Recusandae nesciunt eius repellendus, ipsa dolores aut eos rem odit, nam sunt dolorem. Veritatis repellendus odit totam nobis dolore repudiandae nostrum distinctio explicabo ab numquam! Dolorum nulla doloremque nemo omnis?
+    </div>
+    <footer class="footer">&copy; 2025</footer>
+</body>
+</html>
