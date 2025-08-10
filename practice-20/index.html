@@ -16,7 +16,7 @@
 
         }
         :root{
-            --nvacolor:lightblue;
+            --navbar:lightblue;
             --divcolor: lightpink;
             --textcolor: rgb(222, 41, 41);
             --textsize: 20px;
@@ -25,7 +25,7 @@
         .navbar{
             width: 100%;
             margin: auto;
-            background-color: var(--nvacolor);
+            background-color: var(--navbar);
             padding: 10px;
             box-sizing: border-box;
             position: sticky;
@@ -63,12 +63,13 @@
         }
         .footer{
             width:100%;
-            background-color: var(--nvacolor);
+            background-color: var(--footer, black);
             margin: auto;
             margin-top: 20px;
             padding-bottom: 10px;
             padding-top: 10px;
             text-align: center;
+            color: var(--textcolor);
         }
 
     </style>
