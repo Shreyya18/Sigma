@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selector</title>
+    <style>
+        .box:first-child{
+            background-color: aqua;
+        }
+        .box::first-line{
+            background-color: tomato;
+        }
+
+        .box:nth-child(even){
+            background-color: lightslategray;
+        }
+       ::selection{
+            background-color: blue;
+            color:white
+
+        }
+        .boxes::before{
+            content:"added before the box"
+        }
+        .boxes::after{
+            content: "this is added after the box";
+        }
+        .box::first-letter{
+            color:aqua;
+            font-size:45px;
+        }
+
+        input::placeholder{
+            color: red;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui non itaque aliquid distinctio nisi facere natus, praesentium possimus eius quos accusamus officia, vero optio fugiat ratione delectus. Architecto tenetur quae provident non nisi autem animi dolorum minus, voluptates nostrum ab maiores quisquam ex, iure, omnis sunt voluptate! Iure, doloribus accusantium. hey I am a box</div>
+        <div class="box">hey I am a box</div>
+        <div class="box">hey I am a box</div>
+        <div class="box">hey I am a box</div>
+        <input type="text" placeholder="type something here">
+    </div>
+</body>
+</html>
