@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --primary-color: black;
+            --navcolor1: blue;
+            --navcolor2: green;
+            --navcolor3: red;
+        }
+        nav{
+            width: 100vw;
+            background-color:var(--primary-color);
+
+        }
+        /* ul{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+        } */
+         ul{
+            display: flex;
+            justify-content: space-around;
+         }
+        ul li{
+            list-style-type: none;
+            padding: 20px;
+
+
+        }
+        ul li:first-child{
+            background-color: var(--navcolor1);
+        }
+        li:nth-child(2){
+            background-color: var(--navcolor2);
+        }
+        li:last-child{
+            background-color: var(--navcolor3);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>
