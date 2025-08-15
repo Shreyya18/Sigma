@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            width: 100vw;
+            overflow-x: hidden;
+        }
+        body {
+            background-color: black;
+        }
+
+        .header .nav {
+            display: flex;
+            background-color: white;
+            align-items: center;
+            /* justify-content: space-between; */
+            padding: 0 20px;
+            width: 100%;
+
+
+        }
+
+        ul {
+            display: flex;
+            gap: 35px;
+            align-items: center;
+
+        }
+
+        ul li {
+            list-style-type: none;
+
+        }
+
+        img {
+            padding: 0 50px 0 0px;
+        }
+
+        .div-last {
+            padding: 0 0 0 300px;
+            box-sizing: border-box;
+            display: flex;
+
+        }
+       
+
+        .div-last .buy{
+            border: 2px solid black;
+            padding: 5px;
+
+        }
+        .div-last .buy:hover{
+            background-color: rgba(252, 218, 23, 0.687);
+        }
+
+        .list ul li a{
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div>
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Frame-1-2.png" alt="ultra">
+            </div>
+            <div class="list">
+                <ul>
+                    <li>
+                        <a href="#">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#">Resources</a>
+                    </li>
+                    <li>
+                        <a href="#">About us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="div-last">
+                <ul>
+                    <li class="buy">BUY NOW</li>
+                    <li> <i class="fa-solid fa-globe"></i> <span>English</span> </li>
+                    <li><i class="fa-brands fa-searchengin"></i> <span>Search</span></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>
