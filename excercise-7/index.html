@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraEdit</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .header {
+            width: 100vw;
+            margin: auto;
+            background-color: white;
+            height: 10vh;
+            /* display: flex; */
+            /* align-items: center; */
+            /* padding: 2vh; */
+
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            box-sizing: border-box;
+            gap: 5rem;
+
+        }
+
+        nav ul {
+            display: flex;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        ul li {
+            list-style-type: none;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+
+        }
+
+        main {
+            width: 80vw;
+            margin: auto;
+        }
+
+        .content1 {
+            color: white;
+            text-align: center;
+            margin: 3rem auto;
+            /* background-color: white; */
+            padding: 10px;
+            box-sizing: border-box;
+            /* border: 2px solid red; */
+        }
+
+        .content1 h2 {
+            padding: 5px;
+            font-size: xx-large;
+        }
+
+        .content1 p {
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        .content1 button {
+            border: none;
+            background-color: rgba(10, 197, 231, 0.71);
+            padding: 10px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .grids {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            /* border: 2px solid red; */
+            box-sizing: border-box;
+            
+        }
+
+        .grid {
+            color: white;
+            border: 2px solid gray;
+            width: 90%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 1rem auto;
+        }
+
+        .grid h5 {
+            padding: 5px;
+            box-sizing: border-box;
+            text-align: center;
+            font-size: x-large;
+
+        }
+        .grid button{
+            padding: 5px;
+            width: 70%;
+            
+        }
+        .grid button:last-child {
+            background-color: yellow;
+            border: none;
+        }
+        .grid button:nth-child(2){
+            background-color: green;
+            border: none;
+        }
+
+        @media only screen and (max-width:450px) {
+
+            img {
+                display: none;
+            }
+
+            nav {
+                display: flex;
+                align-items: center;
+                box-sizing: border-box;
+
+
+            }
+
+            nav ul {
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+
+            .grids {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 5px;
+            }
+
+
+        }
+
+    </style>
+</body>
+<header class="header">
+    <nav class="nav">
+        <div>
+            <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Frame-1-2.png" alt="ultra">
+        </div>
+        <div class="list">
+            <ul>
+                <li>
+                    <a href="#">Products</a>
+                </li>
+                <li>
+                    <a href="#">Pricing</a>
+                </li>
+                <li>
+                    <a href="#">Resources</a>
+                </li>
+                <li>
+                    <a href="#">About us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="content1">
+            <h2>Download UltraEdit for Windows</h2>
+            <p>Download and try UntraEnd beofre you buy it! This download includes the full Windows version of the text
+                editor.</p>
+            <button>Download</button>
+        </div>
+
+        <div class="grids">
+            <div class="grid">
+                <h5>English</h5>
+                <button>View more</button>
+                <button>Download</button>
+            </div>
+            <div class="grid">
+                <h5>English</h5>
+                <button>View more</button>
+                <button>Download</button>
+            </div>
+            <div class="grid">
+                <h5>English</h5>
+                <button>View more</button>
+                <button>Download</button>
+            </div>
+            <div class="grid">
+                <h5>English</h5>
+                <button>View more</button>
+                <button>Download</button>
+            </div>
+            <div class="grid">
+                <h5>English</h5>
+                <button>View more</button>
+                <button>Download</button>
+            </div>
+            <div class="grid">
+                <h5>English</h5>
+                <button>View more</button>
+                <button>Download</button>
+            </div>
+            <div class="grid">
+                <h5>English</h5>
+                <button>View more</button>
+                <button>Download</button>
+            </div>
+            <div class="grid">
+                <h5>English</h5>
+                <button>View more</button>
+                <button>Download</button>
+            </div>
+            <div class="grid">
+                <h5>English</h5>
+                <button>View more</button>
+                <button>Download</button>
+            </div>
+        </div>
+    </main>
+</header>
+
+</html>
