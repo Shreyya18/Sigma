@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container {
+            width: 60vw;
+            height: 50vh;
+            background-color: burlywood;
+        }
+
+        .box {
+            background-color: brown;
+            width: 10vw;
+            height: 10vh;
+            animation: firstAnimation 5s ease-in-out 1s 1 reverse,
+                secondAnimation 5s ease-in 1s infinite;
+        }
+
+        @keyframes firstAnimation {
+            from {}
+
+            to {
+                transform: rotate(100deg);
+            }
+        }
+
+        @keyframes secondAnimation {
+            from {}
+
+            to {
+                transform: scale(2);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
+
+</html>
