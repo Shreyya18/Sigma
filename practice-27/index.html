@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS transition</title>
+    <style>
+        .container{
+            width: 60vw;
+            height: 50vh;
+            background-color: bisque;
+            margin: auto;
+        }
+        .box{
+            width: 10vw;
+            height: 10vh;
+            background-color: brown;
+            
+
+        }
+        .translate{
+            transform:translate(10vw) ;
+            /* transition-property: transform;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+            transition-delay: 1s; */
+            transition: transform 3s ease-in 1s;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
 </body>
 </html>
