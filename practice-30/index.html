@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filter</title>
+
+    <style>
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .img1 {
+            width: 400px;
+            height: 400px;
+            filter: blur(2px);
+            filter: brightness(4);
+
+        }
+
+        .img2 {
+            width: 400px;
+            height: 400px;
+            filter: contrast(2);
+            filter:sepia() contrast(22);
+        }
+
+        .img3 {
+            width: 400px;
+            height: 400px;
+            filter: grayscale(2);
+            
+        }
+        .main{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="main">
+        <img  width="400px" height="400px"
+            src="https://img.freepik.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.jpg?semt=ais_hybrid&w=740&q=80"
+            alt="parrot">
+        <img class="img1"
+            src="https://img.freepik.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.jpg?semt=ais_hybrid&w=740&q=80"
+            alt="parrot">
+            </div>
+
+            <div class="main">
+        <img  width="400px" height="400px"
+            src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE="
+            alt="">
+        <img class="img2"
+            src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE="
+            alt="">
+
+            </div>
+            <div class="main">
+        <img width="400px" height="400px"
+            src="https://imgv3.fotor.com/images/slider-image/A-clear-image-of-a-woman-wearing-red-sharpened-by-Fotors-image-sharpener.jpg"
+            alt="">
+        <img class="img3"
+            src="https://imgv3.fotor.com/images/slider-image/A-clear-image-of-a-woman-wearing-red-sharpened-by-Fotors-image-sharpener.jpg"
+            alt="">
+            </div>
+    </div>
+</body>
+
+</html>
