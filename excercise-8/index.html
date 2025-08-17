@@ -19,30 +19,26 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            animation: up 1s ease-out 1s infinite normal,
-                       right 1s ease-in-out 1s infinite normal ;
+            animation: right 5s linear 1s infinite normal ,up 1s ease-out 1s infinite alternate ;
 
 
         }
         @keyframes up {
-            0%{
-                transform: translateY(0);
+            from{
             }
-            50%{
-                transform: translateY(-350px);
+            to{
+               bottom: 100%; 
             }
-            100%{
-                transform: translateY(0);
-            }
+            
 
             
         }
         @keyframes right {
             from{
-                
+                left: 0;
             }
             to{
-                transform: translateX(50px);
+                left:100%;
             }
         }
     </style>
