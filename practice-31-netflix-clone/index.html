@@ -13,9 +13,11 @@
         * {
             margin: 0;
             padding: 0;
-            /* overflow-x: hidden; */
+            overflow-x: hidden;
             font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+            border: 2px solid red;
         }
+        
 
         .section-1 {
             width: 100vw;
@@ -36,7 +38,7 @@
         .transparent {
             background-color: rgba(0, 0, 0, 0.61);
             /* background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.438) , transparent 60%, rgba(0, 0, 0, 0.765)); */
-            /* background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.2)); */
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
 
             top: 0;
             bottom: 0;
@@ -109,23 +111,76 @@
         }
 
         .section-1-content .section-1-span1 {
-            font-size: 2.8rem;
-            font-weight:500;
+            font-size: 2.5rem;
+            font-weight: 500;
             text-align: center;
             padding: 0;
             margin: 0;
-            line-height:1;
+            line-height: 1;
+            overflow: hidden;
         }
 
         .section-1-content .section-1-span2 {
-            font-size:1.5rem ;
+            font-size: 1.4rem;
             margin-top: 1rem;
         }
-        .section-1-content .section-1-span3{
-            font-size:1.3rem ;
+
+        .section-1-content .section-1-span3 {
+            font-size: 1.3em;
             text-align: center;
             margin-top: 0.8rem;
             max-width: 400px;
+        }
+
+        .section-2 {
+            display: flex;
+            gap: 10vw;
+            background-color: black;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            height: 65vh;
+            width: 100vw;
+
+
+        }
+
+
+
+        .section-2 .text {
+            width: 30vw;
+            height: 40vh;
+        }
+
+        .section-2 .text h1 {
+            font-size: 2.5rem;
+            line-height: 5rem;
+
+        }
+
+        .section-2 .text p {
+            font-size: 1.2rem;
+        }
+
+        .section-2 .image-video{
+            /* height: 40vh; */
+
+
+        }
+
+        .section-2 .image-video .image {
+            position: absolute;
+            /* width: 100%; */
+            /* max-width: 20vw; */
+            /* height: 40vh; */
+            
+        }
+
+        .section-2 .image-video .video {
+            /* position: absolute; */
+            width: 20vw;
+            /* height: 10vh; */
+
         }
     </style>
 </head>
@@ -152,14 +207,25 @@
             <div class="section-1-content">
                 <h1 class=" section-1-span1"> Unlimited movies, TV shows, and more.</h1>
                 <span class=" section-1-span2">Watch anywhere. Cancel anytime.</span>
-                <span class=" section-1-span3">Ready to watch? Enter your email to create or restart your membership.</span>
+                <span class=" section-1-span3">Ready to watch? Enter your email to create or restart your
+                    membership.</span>
             </div>
         </div>
-        <!-- 
-        <div class="section-2">
 
-        </div> -->
+        <div class="section-2">
+            <div class="text">
+                <h1>Enjoy on your TV.</h1>
+                <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+            </div>
+            <div class="image-video">
+                <img class="image" src="assets/tv-1.png" alt="">
+                <video muted autoplay loop class="video" src="assets/Video.m4v"></video>
+            </div>
+            <hr>
+        </div>
     </div>
 </body>
 
 </html>
+
+<!-- https://web.archive.org/web/20221230022610/https://www.netflix.com/ -->
