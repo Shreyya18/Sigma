@@ -134,7 +134,10 @@
             max-width: 400px;
         }
 
-        .section-2 {
+        .section-2,
+        .section-3,
+        .section-4,
+        .section-5 {
             display: flex;
             gap: 10vw;
             background-color: black;
@@ -151,8 +154,11 @@
 
 
 
-        .section-2 .text {
-            width: 30vw;
+        .section-2 .text,
+        .section-3 .text,
+        .section-4 .text,
+        .section-5 .text {
+            width: 35vw;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -161,17 +167,26 @@
             /* margin: ; */
         }
 
-        .section-2 .text h1 {
-            font-size: 2.5rem;
-            line-height: 5rem;
+        .section-2 .text h1,
+        .section-3 .text h1,
+        .section-4 .text h1,
+        .section-5 .text h1 {
+            font-size: 2.4rem;
+            /* line-height: 4rem; */
 
         }
 
-        .section-2 .text p {
-            font-size: 1.2rem;
+        .section-2 .text p,
+        .section-3 .text p,
+        .section-4 .text p,
+        .section-5 .text p{
+            font-size: 1.4rem;
         }
 
-        .section-2 .image-video {
+        .section-2 .image-video,
+        .section-3 .image-video,
+        .section-4 .image-video,
+        .section-5 .image-video {
             width: 30vw;
             height: 40vh;
             position: relative;
@@ -183,20 +198,72 @@
 
 
         }
-
-        .section-2 .image-video .image {
+        .section-4 .image-video, .image,
+        .section-5 .image-video .image {
+            width: 30vw;
+            height: 40vh;
+        }
+        .section-2 .image-video .image,
+        .section-3 .image-video .image
+        {
             position: absolute;
             width: 30vw;
             height: 40vh;
             object-fit: cover;
+            z-index: 1;
 
         }
 
         .section-2 .image-video .video {
+            position: absolute;
             width: 30vw;
             height: 40vh;
+        }
+
+        .section-3 .image-video .video-wrapper {
+            /* overflow: hidden;
+             position: absolute;
+            width: 74%;
+            height: 64%;
+            top: 5%;
+            bottom: 5%;
+            left: 10%;
+            right: 0%; */
+            overflow: hidden;
+            position: absolute;
+            width: 62%;
+            height: 64%;
+            top: 0%;
+            bottom: 5%;
+            left: 18%;
+            right: 0%;
+        }
+
+        .section-3 .image-video .video-wrapper .video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .section-6{
+            background-color: black;
+            color: white;
+            min-height: 100vh;
+            padding: 2rem;
+            box-sizing: border-box;
 
         }
+
+         .section-6 h1{
+            text-align: center;
+         }
+
+         .section-6 .faq{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+         }
     </style>
 </head>
 
@@ -239,10 +306,65 @@
         </div>
 
         <div class="section-3">
-            <div class="image-video"></div>
+            <div class="image-video">
+                <img class="image" src="assets/device-pile-2.png">
+                <div class="video-wrapper">
+                    <video class="video" muted autoplay loop src="assets/Video.m4v"></video>
+                </div>
+            </div>
             <div class="text">
-                <h1>Watch everywhere.
-Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</h1>
+                <h1>Watch everywhere.</h1>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.
+                </p>
+            </div>
+        </div>
+        <div class="section-4">
+            <div class="text">
+                <h1>Create profiles for kids.
+                </h1>
+                <p>Send kids on adventures with their favorite characters in a space made just for them—free with your
+                    membership.</p>
+            </div>
+            <div class="image-video">
+                <img class="image" src="assets/img-3.png" alt="">
+            </div>
+        </div>
+
+        <div class="section-5">
+            <div class="image-video">
+                <img  class="image" src="assets/mobile-4.jpg" alt="">
+            </div>
+            <div class="text">
+                <h1>Download your shows to watch offline.
+</h1>
+                <p>Available on all plans except Basic with ads.</p>
+            </div>
+        </div>
+
+        <div class="section-6">
+            <h1>Frequently Asked Questions</h1>
+            <div class="faq">
+                <div>
+                    <p>What is Netflix?</p>
+                </div>
+                <div>
+                    <p>How much does Netflix cost?</p>
+                </div>
+                <div>
+                    <p>What’s different on Basic with ads?</p>
+                </div>
+                <div>
+                    <p>Where can I watch?</p>
+                </div>
+                <div>
+                    <p>How do I cancel?</p>
+                </div>
+                <div>
+                    <p>What can I watch on Netflix?</p>
+                </div>
+                <div>
+                    <p>Is Netflix good for kids?</p>
+                </div>
             </div>
         </div>
     </div>
