@@ -153,7 +153,6 @@
         }
 
 
-
         .section-2 .text,
         .section-3 .text,
         .section-4 .text,
@@ -179,7 +178,7 @@
         .section-2 .text p,
         .section-3 .text p,
         .section-4 .text p,
-        .section-5 .text p{
+        .section-5 .text p {
             font-size: 1.4rem;
         }
 
@@ -198,14 +197,16 @@
 
 
         }
-        .section-4 .image-video, .image,
+
+        .section-4 .image-video,
+        .image,
         .section-5 .image-video .image {
             width: 30vw;
             height: 40vh;
         }
+
         .section-2 .image-video .image,
-        .section-3 .image-video .image
-        {
+        .section-3 .image-video .image {
             position: absolute;
             width: 30vw;
             height: 40vh;
@@ -245,38 +246,106 @@
             object-fit: cover;
         }
 
-        .section-6{
+        .section-6 {
             background-color: black;
             color: white;
             min-height: 100vh;
             /* padding: 2rem; */
             box-sizing: border-box;
+            border-bottom: 7px solid #222;
+
 
         }
 
-         .section-6 h1{
+        .section-6 h1 {
             text-align: center;
             padding: 2rem;
             font-size: 2.6rem;
-         }
+        }
 
-         .section-6 .faq{
+        .section-6 .faq {
             display: flex;
             flex-direction: column;
             align-items: center;
-         }
+        }
 
-         .section-6 .faq div p{
+        .section-6 .faq div p {
             width: 50vw;
             height: 10vh;
             background-color: #2e2e2e;
-            margin: 1vh;
+            margin: 1vh auto;
             padding: 1rem;
             box-sizing: border-box;
             /* overflow: hidden; */
             display: flex;
             align-items: center;
-         }
+            font-size: 1.2rem;
+        }
+
+        .email {
+            width: 50vw;
+            margin: 2rem auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .email h6 {
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 2vh;
+            text-align: center;
+        }
+
+        .email div {
+
+            display: flex;
+            gap: 0;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .email div input[type=email] {
+            border: white;
+            /* flex: 1; */
+            width: 35vw;
+            height: 10vh;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+            padding: 2px;
+            box-sizing: border-box;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+
+        }
+
+        .email div button {
+            background-color: red;
+            border: none;
+            height: 10vh;
+            width: 10vw;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .section-7 .list {
+            display: flex;
+            /* flex-direction: column; */
+        }
+
+
+        .section-7 {
+            background-color: black;
+            color: white;
+            height: 65vh;
+            width: 100vw;
+
+        }
     </style>
 </head>
 
@@ -345,11 +414,11 @@
 
         <div class="section-5">
             <div class="image-video">
-                <img  class="image" src="assets/mobile-4.jpg" alt="">
+                <img class="image" src="assets/mobile-4.jpg" alt="">
             </div>
             <div class="text">
                 <h1>Download your shows to watch offline.
-</h1>
+                </h1>
                 <p>Available on all plans except Basic with ads.</p>
             </div>
         </div>
@@ -378,6 +447,35 @@
                 <div>
                     <p>Is Netflix good for kids?</p>
                 </div>
+            </div>
+
+            <div class="email">
+                <h6>Ready to watch? Enter your email to create or restart your membership.</h6>
+                <div>
+                    <input type="email" placeholder="Email address">
+                    <button>Get Started ></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-7">
+            <p>Questions? Call 1-844-505-2993</p>
+            <div class="list">
+                <ul>
+                    <li>FAQ</li>
+                    <li>Investor Relations</li>
+                    <li>Ways to Watch</li>
+                    <li>Corporate Information</li>
+                    <li>Only on Netflix</li>
+                </ul>
+
+                <ul>
+                    <li>Help Center</li>
+                    <li>Jobs</li>
+                    <li>Terms of use </li>
+                    <li>Contact Us</li>
+                    <li>Do Not Sell or Share My Personal Information</li>
+                </ul>
             </div>
         </div>
     </div>
