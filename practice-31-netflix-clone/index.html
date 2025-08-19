@@ -15,15 +15,17 @@
             padding: 0;
             overflow-x: hidden;
             font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
-            border: 2px solid red;
+            /* border: 2px solid red; */
         }
-        
+
 
         .section-1 {
             width: 100vw;
             height: 100vh;
             overflow: hidden;
             position: relative;
+            border-bottom: 7px solid #222;
+
 
         }
 
@@ -141,6 +143,8 @@
             justify-content: center;
             height: 65vh;
             width: 100vw;
+            border-bottom: 7px solid #222;
+
 
 
         }
@@ -149,7 +153,12 @@
 
         .section-2 .text {
             width: 30vw;
-            height: 40vh;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: center;
+            /* margin: ; */
         }
 
         .section-2 .text h1 {
@@ -162,23 +171,30 @@
             font-size: 1.2rem;
         }
 
-        .section-2 .image-video{
-            /* height: 40vh; */
+        .section-2 .image-video {
+            width: 30vw;
+            height: 40vh;
+            position: relative;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            overflow: hidden;
 
 
         }
 
         .section-2 .image-video .image {
             position: absolute;
-            /* width: 100%; */
-            width: 20vw;
-            
+            width: 30vw;
+            height: 40vh;
+            object-fit: cover;
+
         }
 
         .section-2 .image-video .video {
-            /* position: absolute; */
-            width: 20vw;
-            /* height: 10vh; */
+            width: 30vw;
+            height: 40vh;
 
         }
     </style>
@@ -220,7 +236,14 @@
                 <img class="image" src="assets/tv-1.png" alt="">
                 <video muted autoplay loop class="video" src="assets/Video.m4v"></video>
             </div>
-            <!-- <hr> -->
+        </div>
+
+        <div class="section-3">
+            <div class="image-video"></div>
+            <div class="text">
+                <h1>Watch everywhere.
+Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</h1>
+            </div>
         </div>
     </div>
 </body>
