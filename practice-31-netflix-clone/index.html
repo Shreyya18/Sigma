@@ -97,7 +97,8 @@
         .section-1-content {
             color: white;
             position: absolute;
-            max-width: 440px;
+            /* max-width: 440px; */
+            max-width: 45vw;
             margin: auto;
             z-index: 1;
             top: 0;
@@ -113,7 +114,7 @@
         }
 
         .section-1-content .section-1-span1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: 500;
             text-align: center;
             padding: 0;
@@ -123,15 +124,55 @@
         }
 
         .section-1-content .section-1-span2 {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             margin-top: 1rem;
         }
 
         .section-1-content .section-1-span3 {
-            font-size: 1.3em;
+            font-size: 0.9em;
             text-align: center;
             margin-top: 0.8rem;
-            max-width: 400px;
+            /* max-width: 45vw; */
+        }
+
+        .section-1 .form{
+         position: absolute;   
+         z-index: 1;
+         color: white;
+         width: 80vw;
+         height: 20vh;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 23rem auto;
+        }
+        .form input[type=email]{
+            width: 35vw;
+            height: 10vh;
+            border: none;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            padding: 2px;
+            box-sizing: border-box;
+        }
+
+        .form button{
+            background-color: red;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            height: 10vh;
+            width: 10vw;
+            padding: 2px;
+            box-sizing: border-box;
+            border: none;
+            color: white;
+            font-size: 1rem;
         }
 
         .section-2,
@@ -336,16 +377,31 @@
         .section-7 .list {
             display: flex;
             /* flex-direction: column; */
+            justify-content: center;
+            align-items: center;
+            margin: 2rem;
         }
 
 
         .section-7 {
             background-color: black;
-            color: white;
-            height: 65vh;
+            color: rgb(92, 92, 92);
+            height: 55vh;
             width: 100vw;
-
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
         }
+        .section-7 .list ul{
+            margin: 2rem;
+            font-size: 0.8rem;
+        }
+        .section-7 .list ul li{
+            padding: 0.5rem;
+            /* margin: 20rem; */
+        }
+
     </style>
 </head>
 
@@ -373,6 +429,11 @@
                 <span class=" section-1-span2">Watch anywhere. Cancel anytime.</span>
                 <span class=" section-1-span3">Ready to watch? Enter your email to create or restart your
                     membership.</span>
+
+            </div>
+            <div class="form">
+                <input type="email" placeholder="Email address">
+                <button>Get Started</button>
             </div>
         </div>
 
@@ -475,6 +536,18 @@
                     <li>Terms of use </li>
                     <li>Contact Us</li>
                     <li>Do Not Sell or Share My Personal Information</li>
+                </ul>
+                <ul>
+                    <li>Account</li>
+                    <li>Redeem Gift Cards</li>
+                    <li>Privacy</li>
+                    <li>Speed Test</li>
+                </ul>
+                <ul>
+                    <li>Media Center</li>
+                    <li>Buy Gift Cards</li>
+                    <li>Cookie Preferences</li>
+                    <li>Legal Notices</li>
                 </ul>
             </div>
         </div>
