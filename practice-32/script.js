@@ -7,4 +7,7 @@ if(b)
 }
 else{
     console.log("You chose not to continue.");
+
 }
+
+document.title="JavaScript Practice";
