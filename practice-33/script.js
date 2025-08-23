@@ -44,3 +44,17 @@ let student={
 console.log(student);
 
 
+let s="apple";
+console.log(s);
+s=s+2;
+console.log(s);
+console.log(s+2);
+
+console.log(typeof s);
+
+const t={
+    "name":"hello"
+}
+console.log(t);
+t.num=1;
+console.log(t);
