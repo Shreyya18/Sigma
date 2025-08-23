@@ -15,3 +15,10 @@ console.log(typeof a, typeof b, typeof c);
 }
 console.log("outside block"+a); 
 console.log("outside block"+d);
+let x=10;
+let y="apple";
+let z=true;
+let v=null;
+let w=undefined;
+console.log(x,y,x,v,w);
+console.log( typeof x, typeof y, typeof z, typeof v, typeof w);
