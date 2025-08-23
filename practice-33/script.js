@@ -22,3 +22,25 @@ let v=null;
 let w=undefined;
 console.log(x,y,x,v,w);
 console.log( typeof x, typeof y, typeof z, typeof v, typeof w);
+
+let o={
+    "name":"John",
+    "job code":101,
+    age:25
+}
+console.log(o);
+o.salary=50000;
+console.log(o);
+
+
+let student={
+    "name":"Alice",
+    "phone":1234567890,
+    "marks":{
+        "maths":90,
+        "science":85
+    }
+}
+console.log(student);
+
+
