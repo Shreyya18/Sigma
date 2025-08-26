@@ -12,3 +12,9 @@ console.log(b.length);
 console.log(b.slice(1,3));
 console.log(b.replace("al","s"));
 console.log(b.concat(a));
+
+//whitespace
+
+let c="  nick   bob ";
+console.log(c);
+console.log(c.trim());
