@@ -37,3 +37,27 @@ console.log(newArr5);
 let arr6=[1,2,3,4,5,6,7];
 arr6.reverse();
 console.log(arr6);
+
+let arr7=[3,6,9,12,15,18];
+
+let newArr7=arr7.map((value)=>{
+    return value*2;
+
+})
+console.log(newArr7);
+
+let arr8=[2,4,6,8,10,12];
+
+const greaterThanfive=(value)=>{
+    if(value>5)
+            return true;
+    return false;
+}
+let newArr8= arr8.filter(greaterThanfive);
+console.log(newArr8);
+
+let arr9=[1,2,3,4,5,6];
+ const sum=(a,b)=>{
+    return a+b;
+ }
+console.log(arr9.reduce(sum));
