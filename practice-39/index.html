@@ -6,9 +6,19 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2    "></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+    </div>
     <script>
         document.title="JS DOM";
         document.body.style.backgroundColor="black";
+        document.body.firstElementChild.children[0].style.width="100px";
+        document.body.firstElementChild.children[0].style.height="100px";
+        document.body.firstElementChild.children[0].style.backgroundColor="red";
        
     </script>
 </body>
