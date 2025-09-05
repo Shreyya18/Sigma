@@ -15,3 +15,8 @@ h1.innerHTML="good evening";
 h1.setAttribute("id","heading")
 document.querySelector(".container").prepend(h1);
 
+document.querySelector(".box").remove();
+
+document.querySelector("button").onclick=function(){
+document.querySelector(".main").classList.toggle("darkMode");
+}
