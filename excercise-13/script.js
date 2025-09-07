@@ -3,7 +3,7 @@ function createCard(title, cName, views, monthsOld, duration, thumbNail){
     document.querySelector('.container').innerHTML+=
      '<div class="card">'+
             '<div class="image">'+
-                '<img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLB6VzxANxt3dHm91HW9lLfDlxvmuA"  alt="" width="200">'+
+                '<img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLB6VzxANxt3dHm91HW9lLfDlxvmuA"  alt="" width="250">'+
                 '<span>30:22</span>'+
             '</div>'+
             '<div>'+

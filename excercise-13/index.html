@@ -6,11 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container{
+        *{
+            padding: 0;
+            margin: 0;
+            margin-top: 1rem;
+            overflow-x: hidden;
+        }
+        .btn{
+            display: flex;
+            justify-content: center; 
+            /* width: 20px; */
+            /* margin: auto;*/
+        }
+        button{
+            margin-top: 1rem;
+            margin:  auto;
+            margin-bottom: 1rem;
+            width: 20rem;
+            height: 2rem;
+            display: flex;
+            place-items: center;
+            justify-content: center;
+            position: sticky;
         }
         .card {
             width: 100vw;
-            height: 20vh;
+            height: 30vh;
             background-color: black;
             display: flex;
             flex-direction: row;
@@ -25,11 +46,15 @@
         img {
             border-radius: 10px;
 
-
         }
-        .image{
+        
+        .image {
             position: relative;
             height: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
         }
         .image span{
             position: absolute;
@@ -39,15 +64,17 @@
             color: black;
             /* top: 0;
             left: 0; */
-            right:5px;
-            bottom: 12px;
+            right:1rem;
+            bottom: 2rem;
 
         }
     </style>
 </head>
 
 <body>
+    <div class="btn">
     <button>CLick Me</button>
+    </div>
     <div class="container">
        
     </div>
