@@ -18,13 +18,31 @@
 
 // using async
 
+// async function getData() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve(400);
+//         }, 4000);
+//     });
+// }
+
+// async function getData() {
+//     let x = fetch('https://jsonplaceholder.typicode.com/todos/1')
+//     console.log(x)
+//     return 444;
+          
+    
+// }
+
 async function getData() {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(400);
-        }, 4000);
-    });
+    let x =  await fetch('https://jsonplaceholder.typicode.com/todos/1')
+    let data= await x.text()
+    console.log(data)
+    return "400 OK"
+    
 }
+
+
 
 async function main() {
     console.log("async example");
@@ -39,6 +57,3 @@ async function main() {
 main()
 
 
-fetch('https://jsonplaceholder.typicode.com/todos/1')
-      .then(response => response.json())
-      .then(json => console.log(json))
