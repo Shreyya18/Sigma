@@ -8,3 +8,9 @@ if(isNaN(a) || isNaN(b))
     throw TypeError ("this is not allowed")
 
 
+try {
+    console.log(sum*x)
+    
+} catch (error) {
+    console.log("error occured" )
+}
