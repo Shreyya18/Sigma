@@ -1,3 +1,4 @@
+//problem-2
 let arr=[1,2,3,3,4,6,7,8,8,9]
 console.log(arr)
 function doubleElement(arr){
@@ -14,3 +15,54 @@ function doubleElement(arr){
 }
 
 doubleElement(arr)
+
+//problem-3
+let s="code"
+console.log(s)
+function reverseAppend(s){
+    let rev=s.split('').reverse().join('')
+    console.log(rev)
+    s+=rev
+    console.log(s)
+    return s
+}
+
+console.log(reverseAppend(s))
+
+
+//problem-4
+function isUpper(pass){
+    return /[A-Z]/.test(pass)
+}
+function isLower(pass){
+    return /[a-z]/.test(pass)
+}
+function isDigit(pass){
+    return /\d/.test(pass)
+}
+function passwordValidator(pass){
+    let valid=true
+    if(pass.length<8){
+        console.log("Passowrd must be atleast 8 characters long...")
+        valid=false
+    }
+    if(!isUpper(pass)){
+        console.log("Password must have atleast one Uppercase :)")
+        valid=false
+    }
+    if(!isLower(pass)){
+        console.log("Password must have atleast one LowerCase :)")
+        valid=false
+    }
+    if(!isDigit(pass)){
+        console.log("Password must have atleast one digit :)")
+        valid=false
+    }
+    if(valid){
+        console.log("Password set sucessfully!!!")
+    }
+
+}
+
+passwordValidator("Password1")
+passwordValidator("password1")
