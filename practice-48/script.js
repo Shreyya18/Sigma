@@ -30,7 +30,7 @@ function reverseAppend(s){
 console.log(reverseAppend(s))
 
 
-//problem-4
+//problem-4  password validator
 function isUpper(pass){
     return /[A-Z]/.test(pass)
 }
