@@ -5,3 +5,5 @@
 
 const a=require("./mymodule2.js");
 console.log(a);
+console.log(__filename);
+console.log(__dirname);
