@@ -84,3 +84,37 @@ function sumPositive(a){
 }
 
 console.log(sumPositive(a))
+
+//problem-6
+function vowelCount(s){
+    let count=0;
+    let vowels="aeiouAEIOU"
+    for (const char of s) {
+        if(vowels.includes(char)){
+            count++;
+        }
+    }
+    return count;
+}
+console.log(vowelCount("aeiss"))
+
+//problem-8
+ let arr1=[1,2,3,4,5]
+
+ async function multiplyByTwo(arr){
+    return new Promise((resolve,reject)=>{
+        setTimeout(() => {
+            let result=arr.map(x=>x*2)
+            resolve(result)
+        }, 500);
+    })
+}
+
+async function main() {
+    console.log(multiplyByTwo(arr1)) //Promise { <pending> }
+    let res= await multiplyByTwo(arr1)
+    console.log(res)
+    
+}
+
+main()
