@@ -66,3 +66,21 @@ function passwordValidator(pass){
 
 passwordValidator("Password1")
 passwordValidator("password1")
+
+
+//problem-5
+let a=[3,-1,6,3,2,-4,6,7,2,1]
+function sumPositive(a){
+    let sum=0;
+    for (let i = 0; i < a.length; i++) {
+        if(a[i]<0){
+            return sum;
+        }
+        else{
+            sum=sum+a[i];
+        }
+    }
+    return sum;
+}
+
+console.log(sumPositive(a))
