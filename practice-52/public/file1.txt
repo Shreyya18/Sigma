@@ -1,0 +1,3 @@
+hello this is visible o the browser.
+ go to browser and go to the localhost:3000/file1.txt
+ 
