@@ -34,6 +34,8 @@
     
 // }
 
+
+console.log("start")
 async function getData() {
     let x =  await fetch('https://jsonplaceholder.typicode.com/todos/1')
     let data= await x.text()
@@ -55,5 +57,7 @@ async function main() {
 }
 
 main()
+
+console.log("end")
 
 
