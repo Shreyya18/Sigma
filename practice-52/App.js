@@ -2,6 +2,8 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+app.use(express.static('public')) //to give public permission to the folder named public
+
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
@@ -31,8 +33,11 @@ app.get('/blog', (req,res)=>{
 //instead of writing all the routes we can use params
 app.get('/blog/:slug', (req,res)=>{
     res.send(`welcome to intro to ${req.params.slug}`)
+    console.log(req.params)
+    console.log(req.query)
 })
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
+
