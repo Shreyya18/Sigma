@@ -1,3 +1,41 @@
 import  mongoose from 'mongoose';
+import express from 'express';
+import {Todo} from './models/Todo.js';
+let conn=await mongoose.connect("mongodb://localhost:27017/todo")
 
-let a=await mongoose.connect("mongodb://localhost:27017/")
+const app=express();
+const port=3000;
+
+app.get('/',(req,res)=>{
+    const todo=new Todo({
+        title:"My first todo",
+        desc:"This is the description of my first todo",
+        isDone:false
+    });
+    todo.save();
+    res.send('Hello World!')
+});
+
+app.get('/todos', (req,res)=>{
+    const todo=new Todo({
+        title:"My second todo",
+        desc:"This is the description of my second todo",
+        isDone:false,
+        date: new Date().getTime()  
+    });
+    todo.save();
+    res.send('Todos route')
+});
+
+app.get('/all-todos', async(req,res)=>{
+    let todo=await Todo.findOne({})
+    console.log(todo)
+    res.json({
+        title: todo.title,
+        desc:todo.desc
+    })
+})
+
+app.listen(port,()=>{
+    console.log(`Example app listening on port ${port}`)
+})
