@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 50vw;
+            height: 50vh;
+            border: 2px solid black;
+            margin: 2rem auto;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+       button{
+            cursor: pointer;
+            background-color: teal;
+            border: none;
+            color: white;
+            padding: 10px;
+            border-radius:7%;
+            font-size: 1.2rem;
+
+       }
+       button:hover{
+            background-color: rgb(56, 89, 89);
+       }
+    </style>
+</head>
+<body>
+    <div>
+        <button>Click me</button>
+        <script>
+            const button=document.querySelector("button");
+            
+            button.onclick=()=>{
+                alert("button was clicked...");
+            }
+
+        </script>
+    </div>
+</body>
+</html>
