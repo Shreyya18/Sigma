@@ -1,4 +1,109 @@
-body{
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mozilla+Headline:wght@200..700&family=Roboto+Slab:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    /* border: 2px solid red; */
+}
+
+body {
     background-color: black;
     color: white;
+    font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
 }
+
+.left {
+    width: 25vw;
+    padding: 10px;
+}
+
+.right {
+    width: 75vw;
+    /* padding: 10px; */
+    margin: 16px 0;
+}
+
+.home ul li {
+    list-style-type: none;
+    width: 14px;
+    display: flex;
+    gap: 15px;
+    padding-top: 14px;
+    /* font-weight: bold; */
+    align-items: center;
+}
+
+.heading{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    padding-top: 14px;
+    padding: 23px 14px;
+    align-items: center;
+    font-size: 13px;
+
+}
+
+.heading img{
+    width:30px
+
+}
+
+.library{
+    min-height:80vh ;
+    position: relative;
+}
+
+.footer {
+    display: flex;
+    font-size: 10px;
+    gap: 13px;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer a{
+    color: gray;
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(29, 29, 29);
+
+}
+ 
+.header > *{
+    padding: 20px;
+}
+
+.spotifyPlaylists{
+    padding: 10px;
+}
+.cardContainer{
+    margin: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap:wrap ;
+}
+.card{
+    width: 190px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #252525;
+
+
+}
+
+.card > *{
+    padding-top: 3px;
+}
+.card img{
+     width: 100%;
+    object-fit: contain;
+} 
