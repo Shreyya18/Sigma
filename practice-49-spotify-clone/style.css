@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mozilla+Headline:wght@200..700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Roboto+Slab:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mozilla+Headline:wght@200..700&family=Roboto+Slab:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 * {
     padding: 0;
@@ -10,10 +10,10 @@
 body {
     background-color: black;
     color: white;
-    font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
-  /* font-weight: <weight>; */
-  font-style: normal;
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    /* font-style: normal; */
 }
 
 .left {
@@ -37,7 +37,7 @@ body {
     align-items: center;
 }
 
-.heading{
+.heading {
     display: flex;
     gap: 15px;
     width: 100%;
@@ -48,62 +48,115 @@ body {
 
 }
 
-.heading img{
-    width:30px
-
+.heading img {
+    width: 30px
 }
 
-.library{
-    min-height:80vh ;
+.library {
+    min-height: 80vh;
     position: relative;
 }
 
 .footer {
     display: flex;
-    font-size: 10px;
-    gap: 13px;
+    font-size: 7px;
+    gap: 10px;
     position: absolute;
     bottom: 0;
+    padding: 15px 0;
 }
 
-.footer a{
+.footer a {
     color: gray;
     text-decoration: none;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     background-color: rgb(29, 29, 29);
 
 }
- 
-.header > *{
+
+.header>* {
     padding: 20px;
 }
 
-.spotifyPlaylists{
+.spotifyPlaylists {
     padding: 10px;
+    
 }
-.cardContainer{
-    margin: 15px;
+
+.cardContainer {
+    /* width: 100%; */
+    margin: 20px;
     display: flex;
-    gap: 10px;
-    flex-wrap:wrap ;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-height: 70vh;
+    overflow-y: scroll;
 }
-.card{
+
+.card {
     width: 190px;
     padding: 10px;
     border-radius: 5px;
     background-color: #252525;
+    position: relative;
+
 
 
 }
 
-.card > *{
+.card>* {
     padding-top: 3px;
 }
-.card img{
-     width: 100%;
+
+.card img {
+    width: 100%;
     object-fit: contain;
-} 
+}
+
+.play {
+    width: 28px;
+    height: 28px;
+    background-color: #1fdf64;
+    border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    right: 9px;
+    opacity: 0;
+}
+
+.card:hover  .play{
+    opacity: 1;
+    bottom:70px ;
+    transition:  all 0.3s ease-in-out ;
+}
+
+.cardContainer::-webkit-scrollbar {
+    height: 8px;                  /* thin horizontal bar */
+}
+
+.cardContainer::-webkit-scrollbar-track {
+    background: transparent;      /* invisible track */
+}
+
+.cardContainer::-webkit-scrollbar-thumb {
+    background: #444;             /* subtle grey thumb */
+    border-radius: 10px;
+}
+
+.cardContainer::-webkit-scrollbar-thumb:hover {
+    background: #555;             /* darker on hover */
+}
+
+/* Firefox */
+.cardContainer {
+    scrollbar-width: thin;        /* thin bar */
+    scrollbar-color: #444 transparent;
+}
