@@ -87,21 +87,24 @@ body {
     padding: 10px;
     
 }
+.spotifyPlaylists h3{
+    padding: 0px 20px
+}
 
 .cardContainer {
     /* width: 100%; */
     margin: 20px;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    /* justify-content: space-between; */
+    gap: 20px;
     flex-wrap: wrap;
     max-height: 70vh;
     overflow-y: scroll;
 }
 
 .card {
-    width: 180px;
+    width: 190px;
     padding: 10px;
     border-radius: 5px;
     background-color: #252525;
@@ -117,7 +120,7 @@ body {
 
 .card img {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .play {
@@ -205,15 +208,84 @@ body {
 }
 
 .playBar{
-    position: absolute;
+    position: sticky;
     bottom: 0;
     background-color: rgb(108, 196, 108);
     padding: 10px;
-    width: 90%;
+    width: 95%;
 }
 
 .songButtons{
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+
+
+/* Search Bar Styles */
+.searchBar {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 0 10px;
+}
+
+.searchBar input {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+.searchBar input::placeholder {
+    color: #a0a0a0;
+}
+
+.searchBar button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    background-color: #1db954;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.searchBar button:hover {
+    background-color: #1ed760;
+    transform: scale(1.05);
+}
+
+/* Song Info Styles */
+.songInfo {
+    display: flex;
+    align-items: center;
+    min-width: 200px;
+}
+
+.songInfo h4 {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Card hover effects */
+/* .card {
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease; */
+/* } */
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #2a2a2a;
+}
+
+.card:hover .play {
+    opacity: 1;
 }
