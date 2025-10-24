@@ -28,9 +28,8 @@
 //  playSong();
 
 
-
 // YouTube API Configuration
-const API_KEY = "AIzaSyD0MFqqdseqR1C6M3-J4HiNkNKN9b-Bp3A"; // Replace with your YouTube Data API v3 key
+const API_KEY =YOUTUBE_API; // Replace with your YouTube Data API v3 key
 let currentPlayer = null;
 let currentVideoId = null;
 let songs = [];
