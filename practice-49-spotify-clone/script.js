@@ -30,7 +30,7 @@
 
 
 // YouTube API Configuration
-const API_KEY = YOUTUBE_API; // Replace with your YouTube Data API v3 key
+const API_KEY = "AIzaSyD0MFqqdseqR1C6M3-J4HiNkNKN9b-Bp3A"; // Replace with your YouTube Data API v3 key
 let currentPlayer = null;
 let currentVideoId = null;
 let songs = [];
@@ -132,8 +132,8 @@ function displaySongs(songs) {
             <h2>${song.title.substring(0, 50)}${song.title.length > 50 ? '...' : ''}</h2>
             <p>${song.description.substring(0, 80)}${song.description.length > 80 ? '...' : ''}</p>
         `;
-        
-        card.addEventListener('click', () => playSong(song));
+        const play= card.querySelector('.play');
+        play.addEventListener('click', () => playSong(song));
         cardContainer.appendChild(card);
     });
 }
