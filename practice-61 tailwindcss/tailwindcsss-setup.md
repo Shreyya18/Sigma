@@ -1,9 +1,11 @@
 ## how to setup tailwind CSS
-
+```
+npm init -y
+```
 Step 1: Run the following commands
 
 ```
-npm install -D tailwindcss 
+npm install -D tailwindcss@3 postcss autoprefixer
 npx tailwindcss init
 ```
 
