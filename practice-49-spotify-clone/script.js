@@ -29,7 +29,7 @@
 
 
 // YouTube API Configuration
-const API_KEY =YOUTUBE_API; // Replace with your YouTube Data API v3 key
+const API_KEY = YOUTUBE_API; // Replace with your YouTube Data API v3 key
 let currentPlayer = null;
 let currentVideoId = null;
 let songs = [];
