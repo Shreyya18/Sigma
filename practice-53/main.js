@@ -1,7 +1,7 @@
 const express=require('express')
 const blog=require('./routes/blog')
 const app=express()
-const port=3000
+const port=3001
 
 app.use(express.static('public'))
 app.use('/blog', blog)
