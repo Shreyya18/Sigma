@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    align-items: center;
+    padding-left: 60px;
+    background-color: palevioletred;
+}
+
+.footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer ul{
+    display: flex;
+    list-style-type: none;
+    gap:3em;
+    padding-left: 15px;
+}
+
+.footer>ul>li>a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
