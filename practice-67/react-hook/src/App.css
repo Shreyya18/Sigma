@@ -4,6 +4,52 @@
   padding: 2rem;
   text-align: center;
 }
+*{
+  /* border: 1px solid red; */
+}
+.todoApp{
+  width: 60vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Todo{
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.Todo>input{
+  width: 30vw;
+  height: 5vh;
+  text-align: center;
+}
+
+.todolist{
+ border: 2px solid black;
+ width: 50vw;
+ height: 60vh;
+ margin: 1rem;
+
+}
+
+.todolist ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todolist ul li{
+  list-style-type: none;
+  background-color: aqua;
+  color: black;
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  
+}
 
 .logo {
   height: 6em;
