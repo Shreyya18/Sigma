@@ -9,7 +9,8 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className='todoApp'>
+        <h3>Todo APP</h3>
       <div className='Todo'>
         <input  name=""  value={todoName} placeholder='Enter your Todo here...' onChange={(e)=>{setTodoName(e.target.value)}}/>
         <button onClick={()=>{
