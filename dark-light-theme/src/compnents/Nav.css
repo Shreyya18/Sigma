@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.Nav{
+
+    width: 100vw;
+    height: 10vh;
+    background-color: cornflowerblue;
+    display: flex;
+    gap: 30rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.links{
+    display: flex;
+    gap: 10rem;
+}
+
+.links>ul{
+    display: flex;
+    gap: 5rem;
+}
+
