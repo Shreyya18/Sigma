@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div{
+    background-color: lightblue;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    
+}
+div h1{
+    font-size: 2rem;
+    font-weight: bold;
+    width: 175px;
+    background-color: violet;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 1px;
+    font-family:'Times New Roman', Times, serif;
+
+}
+div h1:hover{
+    color: darkblue;
+    font-size: 2.1rem;
+    cursor: pointer;
+    width: 185px;
+
+}
+div ul{
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    text-align: center;
+    justify-content:end;
+}
+
+div ul li{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 60px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+div ul li:hover{
+    color: darkblue;    
+    font-size: 1.4rem;
+    width: 80px;
+}
